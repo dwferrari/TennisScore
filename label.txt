@@ -1,0 +1,7 @@
+TennisScore
+RU	Фонарик
+IT	Torcia
+ES	Linterna
+FR	Lanterne
+DE	Taschenlampe
+GR	Φανάρι

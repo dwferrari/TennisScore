@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "flash.h": "c",
+        "libbip.h": "c",
+        "score.h": "c"
+    }
+}
