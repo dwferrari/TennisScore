@@ -10,10 +10,11 @@
 #define GAME_FORTY		3
 #define GAME_ADV		4
 
-#define SET_ZERO	0
-#define SET_ONE		1
-#define SET_TWO		2
-#define SET_THREE	3
+#define ZERO	0
+
+#define SET_ONE		0
+#define SET_TWO		1
+#define SET_THREE	2
 
 #define PLAYER_GREEN	0
 #define PLAYER_RED		1
@@ -30,16 +31,10 @@ struct score_ {
 		unsigned char player_green_game_score;
 		unsigned char player_red_game_score;
 
-		char player_green_set_score;
-		char player_red_set_score;
+		int player_green_set_score[3];
+		int player_red_set_score[3];
 
-		char player_green_set_two_score;
-		char player_red_set_two_score;
-
-		char player_green_set_three_score;
-		char player_red_set_three_score;
-
-		char current_set;
+		int current_set;
 		unsigned char who_serve;
 		unsigned char serve_side;
 		Elf_proc_* proc;				//	process data pointer
@@ -49,7 +44,8 @@ void 	show_score_screen (void *return_screen);
 void 	key_press_score_screen();
 int 	dispatch_score_screen (void *param);
 void	score_screen_job();
+void    long_key_press_score_screen();
 
-void set_score_status();
+void draw_score_screen();
 					
 #endif
